@@ -60,7 +60,7 @@
               <span class="font-bold">NORWAY.</span>EXPERIENCE.<span class="font-bold">CONNECT</span><br>
               <span style="font-size: 132px !important;">WITH <span class="font-bold">LOVE</span></span>
             </h1>
-            <a href="#channellist"><button class="btn btn-warning font-bold"><i class="fa fa-list-alt fa-fw"></i>OUR LIST</button></a><br>
+            <button class="btn btn-warning font-bold" id="channljump"><i class="fa fa-list-alt fa-fw"></i>OUR LIST</button><br>
             <h1 class="text-white"><i class="fa fa-angle-down"></i></h1>
           </div>
           
@@ -195,5 +195,13 @@
 
     </div><!-- ./wrapper -->
 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$("button#channljump").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#channellist").offset().top},
+        'slow');
+});
+</script>
   </body>
 </html>
